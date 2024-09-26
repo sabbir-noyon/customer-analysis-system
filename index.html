@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Chart</title>
+    <title>Customer Analysis System</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/plugins/chart.js/Chart.min.css">
     <link rel="stylesheet" href="style.css" >
 </head>
 
@@ -44,13 +45,7 @@
             <div class="left-part">
                 <!--chart segment-->
                 <div class="chart-segment">
-                    
-                    <div class="legend">
-                        <span>Red</span>
-                        <span>Blue</span>
-                        <span>Yellow</span>
-                    </div>
-                    <canvas id="pieChart" width="400" height="400"></canvas>
+                    <canvas id="pieChart" width="250" height="250"></canvas>
                 </div>
 
                 <!--DP segment-->
@@ -232,8 +227,10 @@
 
     </div>
 
+   
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
 </body>
 
 
