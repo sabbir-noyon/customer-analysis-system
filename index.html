@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Chart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!--Customer Info section-->
+        <div class="customer-info-section">
+            <h3 class="customer-info-heading">Customer Info</h3>
+           
+            <div class="customer-info-styles">
+                <ul>
+                    <li>Name: <strong class="client-name">Sonia Akter <span class="unicode">&#128065;</span></strong></li>
+                    <li>Type: <strong>CUG-01 Individual, Non-Minor</strong></li>
+                    <li>Business Segment: <strong>Retail</strong></li>
+                    <li>Business: <span class="unicode">&#128065;</span> </li>
+                    <li>Owner Name: <strong>Sonia Akter</strong></li>
+                    <li>Date of Birth: <strong>24-Sep-2002</strong></li>
+                    <li>Occupation: <strong>Housewife</strong></li>
+                    <li>National ID: <strong>12345678912345678</strong></li>
+                    <li>CIF Opening Date: <strong>24-Sep-2024</strong></li>
+                    <li>CIF Opening Branch: <strong>Chittagong Branch(1601)</strong></li>
+                    <li>Father's Name: <strong>Kamrul Islam</strong></li>
+                    <li>Mother's Name: <strong>Fatema Begum</strong></li>
+                    <li>Spouse Name: <strong>Junayed Hossain</strong></li>
+                    <li>Communication Address: <strong>Jagganathpur</strong></li>
+                    <li>Employment Address: <strong>Ramchadrapur</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Graph and Details section-->
+        <div class="graph-and-details-section">
+            <div class="left-part">
+                <!--chart segment-->
+                <div class="chart-segment">
+                    
+                    <div class="legend">
+                        <span>Red</span>
+                        <span>Blue</span>
+                        <span>Yellow</span>
+                    </div>
+                    <canvas id="pieChart" width="400" height="400"></canvas>
+                </div>
+
+                <!--DP segment-->
+                <div class="dp-segment">
+                    <h3>DP</h3>
+                    <table>
+                        <tr>
+                            <td>Loan</td>
+                            <td>10000000</td>
+                        </tr>
+                        <tr>
+                            <td>Credit</td>
+                            <td>10000000</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--Usage Channel Segment-->
+                <div class="usage-channel-segment">
+                    <h3>Usage Channel</h3>
+                    <table>
+                        <tr>
+                            <td>Ashtha</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Debit Card</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>E-Commerce</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Credit Card</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>ATM</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>POS</td>
+                            <td>No</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="right-part">
+                <!--PPC Info Segment-->
+                <div class="ppc-info-segment">
+                    <h3>PPC Info</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>PPC Type</th>
+                                <th>Count</th>
+                                <th>Limit</th>
+                                <th>Balance/Outstanding</th>
+                                <th>Offering</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CASA</td>
+                                <td>1</td>
+                                <td>-</td>
+                                <td>60000</td>
+                                <td>Conversion to FD/DPS</td>
+                            </tr>
+                            <tr>
+                                <td>FD</td>
+                                <td>2</td>
+                                <td>-</td>
+                                <td>800000</td>
+                                <td>Conversion to Product</td>
+                            </tr>
+                            <tr>
+                                <td>DPS</td>
+                                <td>0</td>
+                                <td>-</td>
+                                <td>60000</td>
+                                <td>Conversion to FD/DPS</td>
+                            </tr>
+                            <tr>
+                                <td>Loan</td>
+                                <td>1</td>
+                                <td>10000000</td>
+                                <td>7500000</td>
+                                <td>Conversion to FD/DPS</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Card</td>
+                                <td>0</td>
+                                <td>7500000</td>
+                                <td>3000000</td>
+                                <td>Conversion to FD/DPS</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="right-part-child-1">
+                    <!--Portfolio Analysis Segment-->
+                    <div class="portfolio-analysis-segment">
+                        <h3>Current Portfolio Analysis</h3>
+                        <table>
+                            <tr>
+                                <td>Average Balance</td>
+                                <td>5000</td>
+                            </tr>
+                            <tr>
+                                <td>Average Credit Card Utilization</td>
+                                <td>2345</td>
+                            </tr>
+                            <tr>
+                                <td>Month Customer Relationship</td>
+                                <td>3 Years</td>
+                            </tr>
+                            <tr>
+                                <td>Earning</td>
+                                <td>23432</td>
+                            </tr>
+                            <tr>
+                                <td>Customer Profitability</td>
+                                <td>23432</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!--Offering Segment-->
+                    <div class="offering-segment">
+                        <h3>Offering-Personal Offering</h3>
+                    </div>
+                </div>
+
+                <div class="right-part-child-2">
+                    <!--Recent Transaction Segment-->
+                    <div class="recent-transaction-segment">
+                        <h3>Recent Transaction</h3>
+                        <table>
+                            <tr>
+                                <td>CASA</td>
+                                <td>Credit</td>
+                            </tr>
+                            <tr>
+                                <td>Date</td>
+                                <td>Amount</td>
+                            </tr>
+                            <tr>
+                                <td>11-Jan-2024</td>
+                                <td>10000000</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!--Service Status Segment-->
+                    <div class="service-status-segment">
+                        <h3>Service Status</h3>
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>2</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Closing div for graph-and-details-section -->
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+
+</html>

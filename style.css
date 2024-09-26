@@ -1,0 +1,322 @@
+
+   *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+   }
+
+   .main-container{
+    display:flex;
+    
+   }
+
+
+
+ 
+
+   /* Customer Info Section Styling */
+
+   .customer-info-section{
+      width: 30%;
+      border: 1px solid rgb(50, 50, 50);
+      padding:50px;
+      padding-bottom: 40px;
+      background-color: #0b2a2c;
+      color: white;
+    
+   }
+ 
+   .customer-info-heading{
+      text-align: center;
+      padding: 15px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: bolder;
+      font-size: 20px;
+      font-family: "Poppins";
+      
+   }
+
+   .customer-info-section ul{
+     list-style-type: none;
+   }
+
+   .customer-info-styles ul li{
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      display: flex;
+      justify-content:space-between;
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 5px;
+      margin:10px ;
+      transition: transform  0.3s ease-in-out, font-size 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+      
+   }
+
+   .customer-info-styles ul li:hover{
+    transform:translateY(-10px); ;
+      box-shadow: 0px 0px 12px 17px rgba(0, 0, 0, 0.2);
+      font-size: 17.5px;
+ }
+
+  
+  .unicode{
+    font-weight:200 !important;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 2px;
+  }
+
+  
+
+
+  /* Graph and Details section Styling */
+
+  .graph-and-details-section{
+    display: flex;
+    width: 70%;
+    
+    background:#123d42;
+    color:  #FFFFFF;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    gap: 100px;
+    padding:100px 50px;
+    
+   }
+
+   .right-part-child-1{
+    display: flex;
+    gap: 100px;
+    
+   }
+
+   .right-part-child-2{
+    display: flex;
+    gap: 100px;
+    
+   }
+
+   table{
+    border: 1px solid white;
+    border-collapse: collapse;
+    border-radius: 50px;
+    width: 100%;
+    
+    
+    
+   }
+
+  tr{
+    width: 100%;
+  }
+   th{
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  
+    
+   }
+   td{
+    border: 1px solid white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+
+  
+   }
+
+   .chart-segment, 
+   .dp-segment, 
+   .usage-channel-segment, 
+   .ppc-info-segment, 
+   .portfolio-analysis-segment, 
+   .offering-segment, 
+   .recent-transaction-segment, 
+   .service-status-segment {
+       /* border: 2px solid white; */
+       margin: 10px;
+       padding:20px;
+       border-radius: 10px;
+       margin-bottom: 40px;
+       box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.2); /* Add shadow for card effect */
+       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+       
+   }
+
+  .chart-segment:hover, 
+  .dp-segment:hover, 
+  .usage-channel-segment:hover, 
+  .ppc-info-segment:hover, 
+  .portfolio-analysis-segment:hover, 
+  .offering-segment:hover, 
+  .recent-transaction-segment:hover, 
+  .service-status-segment:hover {
+      transform: translateY(-10px); 
+      box-shadow: 0px 0px 17px 17px rgba(0, 0, 0, 0.2); 
+  }
+
+  
+
+   h3{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Poppins";
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+   }
+   
+
+
+
+.left-part{
+  margin-left: 10px;
+}
+
+.right-part{
+  margin-right: 10px;
+}
+
+.chart-segment{
+ 
+  font-size: larger;
+  letter-spacing: 3px;
+
+}
+
+.chart-segment, .dp-segment, .usage-channel-segment{
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+   .ppc-info-segment{
+
+    margin-left: -20px;
+   }
+
+   
+   
+   
+   
+   .right-part-child-1{
+
+   margin:20px;
+   padding-right: 20px;
+   margin-top: 50px;
+   }
+   
+   
+   
+   .portfolio-analysis-segment{
+    margin-right: 10px;
+    
+   }
+
+   .offering-segment{
+
+    margin-left: -60px;
+    
+   }
+
+
+
+   .right-part-child-2{
+    margin:20px;
+    padding-right: 20px;
+    
+
+   }
+
+   .recent-transaction-segment{
+    margin-left: 70px;
+
+   }
+
+   .service-status-segment{
+    margin-left: -40px;
+
+   }
+
+
+   /* Responsive for Tablet */
+
+   @media (max-width: 1024px) {
+    .main-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .customer-info-section, .graph-and-details-section {
+      width: 100%;
+    }
+  
+    .graph-and-details-section {
+      flex-direction: column;
+      padding: 30px;
+      gap: 50px;
+    }
+  
+    .right-part-child-1, .right-part-child-2 {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    table {
+      width: 90%; /* Adjust the table width */
+    }
+  
+    td, th {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+
+
+
+  /* Responsive for Mobile */
+
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .customer-info-section {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .graph-and-details-section {
+      width: 100%;
+      padding: 20px;
+      gap: 30px;
+    }
+  
+    .right-part-child-1, .right-part-child-2 {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    table {
+      width: 100%;
+    }
+  
+    td, th {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    h3 {
+      font-size: 18px;
+    }
+  }
+  
