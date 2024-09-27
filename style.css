@@ -11,9 +11,6 @@
    }
 
 
-
- 
-
    /* Customer Info Section Styling */
 
    .customer-info-section{
@@ -70,8 +67,6 @@
     margin-left: 2px;
   }
 
-  
-
 
   /* Graph and Details section Styling */
 
@@ -105,8 +100,7 @@
     border-collapse: collapse;
     border-radius: 50px;
     width: 100%;
-    
-    
+     
     
    }
 
@@ -138,7 +132,7 @@
    .offering-segment, 
    .recent-transaction-segment, 
    .service-status-segment {
-       /* border: 2px solid white; */
+  
        margin: 10px;
        padding:20px;
        border-radius: 10px;
@@ -161,7 +155,6 @@
   }
 
   
-
    h3{
     text-align: center;
     padding-bottom: 20px;
@@ -171,8 +164,6 @@
     font-weight: bolder;
    }
    
-
-
 
 .left-part{
   margin-left: 10px;
@@ -201,9 +192,6 @@
     margin-left: -20px;
    }
 
-   
-   
-   
    
    .right-part-child-1{
 
@@ -245,78 +233,196 @@
    }
 
 
-   /* Responsive for Tablet */
+/*==============================================================================================
+================================================================================================*/
 
-   @media (max-width: 1024px) {
-    .main-container {
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
+
+
+/* DEVICE RESPONSIVE AND MEDIA QUERIES START */
+
+
+/* For Medium Screen Device */
+
+@media (max-width: 1024px){
+
+   .main-container{
+    flex-direction: column;
+    
+   }
+
   
-    .customer-info-section, .graph-and-details-section {
+
+   .customer-info-section{
       width: 100%;
-    }
+      padding:30px;
+      padding-bottom: 30px;
   
-    .graph-and-details-section {
-      flex-direction: column;
-      padding: 30px;
-      gap: 50px;
-    }
+   }
   
-    .right-part-child-1, .right-part-child-2 {
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    table {
-      width: 90%; /* Adjust the table width */
-    }
-  
-    td, th {
-      font-size: 14px;
-      padding: 10px;
-    }
+
+
+ 
+
+  .graph-and-details-section{
+    flex-direction: column;
+    width: 100%;
+    padding:60px 30px;
+    
+   }
+
+
+
+   .ppc-info-segment {
+
+    overflow-x: auto;
+    
+    margin:0 auto;
+    margin-top: -80px;
+
+
   }
-  
+
+  .portfolio-analysis-segment h3{
+    font-size: 18px;
+  }
 
 
-
-  /* Responsive for Mobile */
-
-  @media (max-width: 768px) {
-    .main-container {
-      flex-direction: column;
-      padding: 10px;
-    }
-  
-    .customer-info-section {
-      width: 100%;
-      padding: 20px;
-    }
-  
-    .graph-and-details-section {
-      width: 100%;
-      padding: 20px;
-      gap: 30px;
-    }
-  
-    .right-part-child-1, .right-part-child-2 {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    table {
-      width: 100%;
-    }
-  
-    td, th {
-      font-size: 12px;
-      padding: 8px;
-    }
-  
-    h3 {
+  .offering-segment h3{
       font-size: 18px;
-    }
+    letter-spacing: 2px;
+
   }
+
+  .recent-transaction-segment h3{
+    font-size: 18px;
+  }
+
+
+  .service-status-segment h3{
+    font-size: 18px;
+  }
+
+
+
+
+}
+
+
+/*=============================================================================
+=============================================================================== */
+
+
+/* For Small Screen Device  */
+
+@media (max-width: 600px){
+
+    .main-container{
+    flex-direction: column;
+    
+    }
+
+
+    .customer-info-section{
+      width: 100%;
+      padding:30px;
+      padding-bottom: 30px;
   
+    }
+  
+
+  .graph-and-details-section{
+    flex-direction: column;
+    width: 100%;
+    padding:60px 30px;
+    
+    }
+
+    
+    .right-part-child-1{
+      flex-direction: column;
+      gap: 100px;
+      
+    }
+
+    .right-part-child-2{
+      flex-direction: column;
+      gap: 100px;
+      
+    }
+
+    .ppc-info-segment {
+
+      overflow-x: auto;
+      font-size: 1rem;
+      margin:0 auto;
+      margin-top: -80px;
+
+
+    }
+
+    .ppc-info-segment table {
+
+      width:100%;
+      border-collapse: collapse;
+      table-layout: auto;
+      
+    }
+
+
+  .ppc-info-segment table th,
+  .ppc-info-segment table td {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap; 
+  }
+
+  .ppc-info-segment table {
+    word-wrap: break-word; 
+  }
+
+  .portfolio-analysis-segment{
+    width: 100%;
+  }
+  .portfolio-analysis-segment h3{
+    font-size: 18px;
+  }
+
+
+  .offering-segment{
+
+    margin-left: 20px;
+    margin:0 auto;
+    margin-top: -80px;
+    margin-bottom: 40px;
+    
+  }
+
+  .offering-segment h3{
+    font-size: 16px;
+  letter-spacing: 2px;
+
+  }
+
+  .recent-transaction-segment{
+    width: 100%;
+    margin:0 auto;
+
+  }
+  .recent-transaction-segment h3{
+    font-size: 18px;
+  }
+
+  .service-status-segment{
+    margin:0 auto;
+    margin-top: -40px;
+  }
+
+  .service-status-segment h3{
+    font-size: 18px;
+  }
+
+
+
+
+
+}
